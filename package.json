@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "storybook": "storybook dev -p 6006"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@storybook/vue3-vite": "^7.0.20",
+    "@types/node": "^18",
+    "msw": "^1.2.2",
+    "msw-storybook-addon": "^1.8.0",
+    "nuxt": "^3.5.2",
+    "storybook": "^7.0.20",
+    "unplugin-auto-import": "^0.16.4",
+    "unplugin-vue-components": "^0.25.1"
+  },
+  "msw": {
+    "workerDirectory": "public"
+  }
+}
